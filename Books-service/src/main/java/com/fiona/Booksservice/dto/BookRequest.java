@@ -13,5 +13,5 @@ import org.springframework.data.annotation.Id;
 public class BookRequest {
     private String name;
     private String description;
-    private Float price;
+    private Double price;
 }

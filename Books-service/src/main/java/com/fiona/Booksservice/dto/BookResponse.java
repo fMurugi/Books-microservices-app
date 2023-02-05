@@ -13,7 +13,7 @@ public class BookResponse {
     private long id;
     private String name;
     private String description;
-    private Float price;
+    private Double price;
 }
 
 
