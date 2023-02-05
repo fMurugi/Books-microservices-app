@@ -53,9 +53,9 @@ class BooksServiceApplicationTests {
 		BookRequest bookRequest =  getBookRequest();
 //		String bookRequestString=objectMapper.writeValueAsString(bookRequest);
 		mockMvc.perform(MockMvcRequestBuilders.post("/books")
-						.contentType(MediaType.APPLICATION_JSON));
-//						.content(String.valueOf(bookRequest)))
-//				.andExpect(status().isCreated());
+						.contentType(MediaType.APPLICATION_JSON)
+						.content(String.valueOf(bookRequest)))
+				.andExpect(status().isCreated());
 		Assertions.assertEquals(1,bookRepository.findAll().size());
 
 	}
